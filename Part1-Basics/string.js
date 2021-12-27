@@ -49,3 +49,53 @@ let strPadStart = stringPadding.padStart(8,0)
 let strPadEnd = stringPadding.padEnd(8,"#")
 console.log('String after padStart', strPadStart);
 console.log('String after padStart', strPadEnd);
+
+
+/************************String Conversion*********************************** */
+
+// Method1: String to number, number to string conversion
+let age = 45;
+let stud_name ="Faiz"
+console.log('Type of age is:', typeof age)
+console.log('Type of name is:', typeof stud_name)
+
+console.log("Type of age is", typeof (age+ '')) //Number to string conversion
+
+let Age = "30"
+console.log("Type of Age is", typeof +Age)  //String to number conversion by just adding + sign 
+
+// Method2: String to number, number to string conversion
+
+let persons = 5;
+let result = String(persons)
+console.log('Type of persons after conversion is:', typeof result)
+
+let quantity = '8';
+let resul = Number(quantity)
+console.log('Type of quantity after conversion is:',typeof resul)
+
+
+/***********************String Concat***********************/
+
+let num1 = "17";
+let num2 ="10";
+
+let numb = num1+num2
+console.log('String after concat', numb)
+
+let nmber = +num1 + +num2
+console.log('String after concat', nmber)
+
+
+/******************Template String*******************/
+
+
+let friendName = 'Gautam';
+let friendage  = 30;
+
+let aboutFriend = friendName + " " +"is my friend his age is "+friendage + " and " + "he is a banker." 
+console.log(aboutFriend);
+
+let aboutGautam = `${friendName} is my friend his age is ${friendage} and he is a banker.`
+console.log(aboutGautam);
+
