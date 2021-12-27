@@ -30,9 +30,22 @@ console.log('String in uppercase', toUpper)
 let toLower = studentName.toLowerCase();
 console.log('String in lowercase', toLower)
 
+let characterAt = studentName.charAt(3)
+console.log('Character at position 3 is', characterAt) //
+
 let stringData = 'Gautam'
 let sliceString = stringData.slice(4, 6)  //It will start at 0 index and end at 4 index but not include 4 index and returne a new string.
 console.log('String after slice', sliceString)
 
 let replacedStr = stringData.replace('Gautam', 'Atif')
 console.log('String replaced with new string', replacedStr)
+
+let fullName = 'Atif,Gautam,Faiz'
+let splitData = fullName.split(',')
+console.log('It will split string with ,', splitData)
+
+let stringPadding = '5' 
+let strPadStart = stringPadding.padStart(8,0)
+let strPadEnd = stringPadding.padEnd(8,"#")
+console.log('String after padStart', strPadStart);
+console.log('String after padStart', strPadEnd);
